@@ -52,6 +52,6 @@ Tentukan apakah angka x adalah palindrom tanpa mengubahnya menjadi teks (string)
 - Simpan Nilai Asli: Buat variabel original untuk menduplikasi nilai x, karena nilai x asli akan dipotong hingga habis.
 - Inisialisasi Pembalik: Buat variabel reversed bernilai 0 untuk menyusun angka baru dari belakang.
 - Perulangan Pembalikan: Selama x > 0:
--- Kalikan reversed dengan 10, lalu tambahkan dengan digit terakhir dari x (x % 10).
--- Buang digit terakhir x dengan pembagian bulat (x /= 10).
+ - Kalikan reversed dengan 10, lalu tambahkan dengan digit terakhir dari x (x % 10).
+ - Buang digit terakhir x dengan pembagian bulat (x /= 10).
 - Evaluasi Akhir: Kembalikan hasil perbandingan apakah original == reversed.
