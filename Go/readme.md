@@ -43,3 +43,15 @@ func romanToInt(s string) int {
     // 4. Return total
 }
 ```
+
+# 5. Palindrome Number
+Tentukan apakah angka x adalah palindrom tanpa mengubahnya menjadi teks (string). Angka negatif pasti bukan palindrom karena tanda minus (-121 dibalik menjadi 121-).
+
+## Alur Logika (Matematis):
+- Pengecekan Awal: Jika x negatif, atau x berakhiran angka 0 (kecuali angka 0 itu sendiri), langsung kembalikan false.
+- Simpan Nilai Asli: Buat variabel original untuk menduplikasi nilai x, karena nilai x asli akan dipotong hingga habis.
+- Inisialisasi Pembalik: Buat variabel reversed bernilai 0 untuk menyusun angka baru dari belakang.
+- Perulangan Pembalikan: Selama x > 0:
+-- Kalikan reversed dengan 10, lalu tambahkan dengan digit terakhir dari x (x % 10).
+-- Buang digit terakhir x dengan pembagian bulat (x /= 10).
+- Evaluasi Akhir: Kembalikan hasil perbandingan apakah original == reversed.
