@@ -20,3 +20,26 @@ y := target - x
 // Cek apakah nilai 'y' sudah tersimpan di dalam map
 indeksY, ditemukan := riwayatAngka[y]
 ```
+
+# 4. Roman to Integer
+Ubah teks simbol Romawi menjadi angka. Aturan utama: jika simbol yang lebih kecil berada tepat di depan simbol yang lebih besar, maka nilainya dikurangi (contoh: IV = 5 - 1). Jika tidak, nilainya ditambahkan.
+
+## Alur Logika:
+- Peta Nilai (*Map*): Buat sebuah *map* untuk menyimpan nilai setiap karakter ('I': 1, 'V': 5, dst).
+- Variabel Total: Siapkan variabel bernilai 0 untuk menyimpan hasil akhir.
+- Perulangan: Lakukan iterasi dari awal hingga akhir indeks teks.
+- Validasi Batas: Pastikan indeks saat ini bukan indeks terakhir sebelum membandingkannya dengan indeks berikutnya.
+- Pengecekan: Jika nilai karakter saat ini lebih kecil dari nilai karakter di sebelah kanannya, kurangi variabel total dengan nilai karakter saat ini.
+- Penambahan: Jika lebih besar atau sama (atau sudah di indeks terakhir), tambahkan nilai karakter saat ini ke variabel total.
+
+```bash
+func romanToInt(s string) int {
+    // 1. Deklarasi map nilai Romawi
+    // 2. Deklarasi variabel total = 0
+    // 3. For loop sepanjang len(s)
+        // a. Cek apakah indeks+1 ada DAN nilai saat ini < nilai berikutnya
+        // b. Jika ya: total -= nilai saat ini
+        // c. Jika tidak: total += nilai saat ini
+    // 4. Return total
+}
+```
